@@ -1,0 +1,71 @@
+.Login {
+    margin-top: 10rem;
+    color:#371B64;
+    .inline {
+        display: inline !important;
+        
+    }
+    
+    .title {
+        margin-bottom: 0;
+      
+    }
+
+    img {
+        width: 95%;
+        
+    }
+    
+    .form-container {
+        margin-top: 4rem;
+        border-radius: 10px;
+        color: blue;
+        
+            .formField {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                margin-bottom: 0.75rem;
+                
+                .invalid {
+                    border: 1px solid #ff0000;
+                    border-radius: 2px;
+                    animation: shake 300ms;
+
+                    @keyframes shake {
+                     25% {transform: translateX(4px); }
+                     50% { transform: translateX(-4px); }
+                     75% { transform: translateX(4px); }
+                    }
+                }
+
+                
+
+                .valid {
+                    border-color: blue;
+                }
+            }
+
+            .button {
+                margin: 1rem;
+                margin-top: 0;
+                color: #18081E;
+                font: bold;
+                background-image: linear-gradient(to left, #92a2ba, #8890ad, #817d9f, #7d6a8e, #79577a);
+                border: 2px solid palevioletred;
+                padding: 0.6rem;
+                border-radius: 6px;
+                transition-duration: 0.5s;
+                animation: ease-in-out;
+
+                button:hover{
+                    background-color: linear-gradient(to right top, #030303, #0d0912, #160d1b, #1d1022, #271128);
+                    transform: scale(1.2);
+                    border:none;
+                    color: white;
+                }
+                
+            }
+        
+    }
+}

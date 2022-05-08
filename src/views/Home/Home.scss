@@ -1,0 +1,18 @@
+.home {
+    background: url('https://res.cloudinary.com/caellum/image/upload/v1651406808/caellum/home2_xfmvhs.jpg');
+    background-size: cover;
+   max-width: max-content;
+
+    .title {
+      font-weight: bold;
+    }
+
+
+    .h2 {
+        margin: 1.5rem 0 2rem 0 !important
+    }
+
+    .fa-cog{
+        font-size: 40px;
+    }
+}
