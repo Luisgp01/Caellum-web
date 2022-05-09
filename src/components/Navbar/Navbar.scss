@@ -1,4 +1,4 @@
-.navbar {
+.Navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,12 +6,6 @@
     background-color: #4C3375;
 
     
-    a:link, a:visited, a:active {
-        text-decoration:none;
-        color: black;
-        margin-left: 0.5rem;
-    }
-
     .flex {
         display: flex;
         justify-content: center;
@@ -55,7 +49,7 @@
         border: 1px solid rgb(74, 74, 74);
     }
 
-    .navUser {
+    .navUsers {
 
         .frame-img {
             border-radius: 50%;
@@ -70,14 +64,6 @@
             }
         }
     }
-}
-.drop-screen{
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
 }
 
 .dropdown {

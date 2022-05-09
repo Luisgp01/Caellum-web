@@ -2,7 +2,7 @@
     margin-top: 10rem;
 
     .inline {
-        display: inline !important;
+        display: inline;
     }
     
     .title {
@@ -13,7 +13,7 @@
         width: 95%;
     }
     
-    .form-container {
+    .form {
         margin-top: 4rem;
         border-radius: 10px;
     
@@ -26,7 +26,7 @@
 
                 .invalid {
                     border: 1px solid #ff0000;
-                    border-radius: 2px;
+                    border-radius: 4px;
                     
                     animation: shake 300ms;
 
@@ -39,15 +39,15 @@
                 
 
                 .valid {
-                    border-color: blue;
+                    border-color: green;
                 }
             }
 
-            .button {
+            .btn {
                 margin-top: 1.5rem;
                 background-image: linear-gradient(to left, #92a2ba, #8890ad, #817d9f, #7d6a8e, #79577a);
 
-                button:hover{
+                btn:hover{
                     background-color: linear-gradient(to right top, #030303, #0d0912, #160d1b, #1d1022, #271128);
                     transform: scale(1.2);
                     border:none;

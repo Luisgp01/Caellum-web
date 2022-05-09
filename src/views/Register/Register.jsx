@@ -48,7 +48,7 @@ const Register = () => {
                         <Link to={'/login'}> Sign In</Link>
                     </div>
                     <div>
-                        <form onSubmit={handleSubmit(onSubmit)} className='form-container'>
+                        <form onSubmit={handleSubmit(onSubmit)} className='form'>
                             <div className='formField'>
                                 <label>Name</label>
                                 <input
@@ -79,7 +79,7 @@ const Register = () => {
 
                             {backErrors.message && <p style={{color: "red"}}>{backErrors.message}</p>}
 
-                            <button className='button'>Create an account</button>
+                            <button className='btn'>Create an account</button>
                         </form>
                     </div>
                 </div>
