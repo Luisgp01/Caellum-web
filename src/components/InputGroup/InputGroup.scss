@@ -1,0 +1,14 @@
+.shake{
+    input:invalid {
+        animation: shake 300ms;
+    }
+    @keyframes shake {
+        25% { transform: translateX(4px); }
+        25% { transform: translateX(-4px); }
+        25% {  transform: translateX(4px);        }
+    }
+}
+
+.color {
+    color: white;
+}

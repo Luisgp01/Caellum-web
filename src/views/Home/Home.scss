@@ -1,18 +1,43 @@
-.home {
-    background: url('https://res.cloudinary.com/caellum/image/upload/v1651406808/caellum/home2_xfmvhs.jpg');
-    background-size: cover;
-   max-width: max-content;
+.block{
+background-image: linear-gradient(to left bottom, #3e0324, #39062b, #320a31, #280e37, #1c123b, #111539, #061636, #001732, #001628, #00131c, #000e11, #030505);
+}
 
-    .title {
-      font-weight: bold;
-    }
+.heading {
+    background-image: linear-gradient(to left bottom, #3e0324, #39062b, #320a31, #280e37, #1c123b, #111539, #061636, #001732, #001628, #00131c, #000e11, #030505);
+}
 
+img,
+svg {
+    vertical-align: middle;
+}
 
-    .h2 {
-        margin: 1.5rem 0 2rem 0 !important
-    }
+.words{
+    color:white;
+}
 
-    .fa-cog{
-        font-size: 40px;
-    }
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider-custom .divider-custom-icon {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.hover{
+    height: 20px;
+    width: 40px;
+}
+
+.img-fluid{
+    width: 200px;
+    height: auto;
+}
+
+.h2{
+    color: white;
+    font-style: oblique;
 }

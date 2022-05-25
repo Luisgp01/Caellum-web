@@ -1,7 +1,12 @@
 .rates {
     width: 18rem;
-    background-image: linear-gradient(to top, #3a1f2f, #43233e, #492950, #4a3063, #443a79, #3e4a8f, #2f5ba3, #006cb7, #0086c6, #009ab2, #00aa7e, #20b337);
-
+    background-image: linear-gradient(to left bottom, #3e0324, #39062b, #320a31, #280e37, #1c123b, #111539, #061636, #001732, #001628, #00131c, #000e11, #030505);
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    box-shadow: #000e11;
+    box-sizing: border-box;
+   
     .button {
         background-image: linear-gradient(to bottom, #3a1f2f, #43233e, #492950, #4a3063, #443a79, #3e4a8f, #2f5ba3, #006cb7, #0086c6, #009ab2, #00aa7e, #20b337);
         transition-duration: 0.6s;
@@ -11,3 +16,22 @@
     }
 }
 
+
+.img-fluid {
+  width: 200px;
+  height: auto;
+  .words {
+      text-align: right;
+  
+    }
+}
+
+.div{
+  color: white;
+  font-style: oblique;
+}
+
+.h1 {
+  color: white;
+  font-style: oblique;
+}

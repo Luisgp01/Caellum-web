@@ -1,26 +1,26 @@
 import React from 'react';
 import { GoogleLogin } from 'react-google-login'
 
+import  { refreshTokenSetup } from '../../utils/refreshTokenSetup'
 
 const clientId = process.env.GOOGLE_ID_CLIENT;
 
-const LoginGoogle= () => {
+function LoginGoogle() {
+    const onSuccess = (res) => {
+        console.log('[Login Sucess] currentUser:', res.profileObj);
 
-      
+        refreshTokenSetup(res)
+    }
 
-  const onSuccess = (googleData) => {
-      console.log(googleData)
-  };
 
-  const onFailure = (res) => {
-      console.log('[Login Failed] res:',res)
-  }
-
+const onFailure = (res) => {
+    console.log('[Login Failed] res:', res);
+}
     return (
         <div>
             <GoogleLogin 
             clientId={clientId}
-            buttonText='Log in'
+            buttonText='Login'
             onSuccess={onSuccess}
             onFailure={onFailure}
             cookiePolicy={'single_host_origin'}
@@ -29,6 +29,6 @@ const LoginGoogle= () => {
          /> 
         </div>
     );
-};
+}
 
 export default LoginGoogle;

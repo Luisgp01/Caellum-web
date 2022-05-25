@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import '../Card/Card.scss'
+import { deletePlan } from '../../services/SubscriptionService'
+import { getCurrentUser, getUserDetail } from '../../services/UsersService';
+import userEvent from '@testing-library/user-event';
 
 function Card()  {
-     
+   
     const [name,setName] = useState('Luis Garcia')
     const [address, setAddress] = useState('Calle prueba 12')
     const [zipCode, setZipCode] = useState('280214')
     const [city, setCity] = useState('Madrid')
+
  
     return (
         <div className='Card'>
             <div className='upper-container'>
             <div className='image-container'>
-                <img src='https://res.cloudinary.com/caellum/image/upload/v1651406249/caellum/caellum-icon_hibrve.png' alt='' height="100px" width="100px" />
             </div>
             </div>
             <div className='lower-container'>
