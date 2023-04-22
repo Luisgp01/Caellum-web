@@ -1,28 +1,57 @@
-import React from 'react';
-import './Carousel.scss';
+import React, { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import carrusel from '../../img/carrusel.jpg'
+import carrusel1 from '../../img/carrusel1.jpg'
+import carrusel2 from '../../img/carrusel2.jpg'
 
-const Carousel = () => {
-    return (
-      <div>
-        <div>
-          <div
-            id="carouselExampleFade"
-            className="carousel slide carousel-fade"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src="https://res.cloudinary.com/caellum/image/upload/v1652944119/caellum/team-hands-in_kgqcfz.jpg"
-                  className="d-block w-100 item img"
-                  alt="HQ"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-};
 
-export default Carousel;
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 img-fluid"
+          src={carrusel}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 img-fluid"
+          src={carrusel1}
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={carrusel2}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+export default ControlledCarousel

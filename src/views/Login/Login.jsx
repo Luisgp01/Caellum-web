@@ -6,8 +6,6 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import InputGroup from "../../components/InputGroup/InputGroup"
 import { login as loginRequest } from '../../services/AuthService';
 import { useAuthContext } from '../../contexts/AuthContext';
-import GoogleLogin from 'react-google-login';
-import Logout from '../../components/Logout/Logout'
 
 const schema = yup.object({
   email: yup.string().email().required(),
@@ -76,8 +74,6 @@ const Login = () => {
       </form>
       <div>
         <br />
-        <GoogleLogin />
-        <Logout />
         <br />
       </div>
       <div className="col-md-6 col-lg-4 mb-5 ">

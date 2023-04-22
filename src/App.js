@@ -2,6 +2,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar";
 import Register from "./views/Register/Register";
 import Login from "./views/Login/Login";
@@ -20,13 +21,13 @@ import Support from "./views/Support/Support";
 import '../src/App.scss'
 
 import Footer from "./components/Footer/Footer";
-import Carousel from "./components/Carousel/Carousel";
+import ControlledCarousel from "./components/Carousel/Carousel";
 
 function App() {
   const { isAuthenticationFetched } = useAuthContext()
   return (
     <div className="App">
-     <Carousel />
+     <ControlledCarousel />
       <Navbar />
       <Footer />
 
