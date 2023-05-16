@@ -1,11 +1,7 @@
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Register from "./views/Register/Register";
-import Login from "./views/Login/Login";
+import Registere from "./views/Register/Registere";
+import Login from "./views/Login/Auth";
 import Profile from "./views/Profile/Profile";
 import NewPost from "./views/Post/NewPost/NewPost";
 import EditPost from "./views/Post/EditPost/EditPost";
@@ -18,18 +14,15 @@ import UserDetail from "./views/Users/UserDetail/UserDetail";
 import Subscriptions from "./views/Subscriptions/Subscriptions";
 import Rates from "./views/Rates/Rates";
 import Support from "./views/Support/Support";
-import '../src/App.scss'
+import "../src/App.scss";
 
 import Footer from "./components/Footer/Footer";
-import ControlledCarousel from "./components/Carousel/Carousel";
 
 function App() {
-  const { isAuthenticationFetched } = useAuthContext()
+  const { isAuthenticationFetched } = useAuthContext();
   return (
     <div className="App">
-     <ControlledCarousel />
       <Navbar />
-      <Footer />
 
       <div className="container">
         {!isAuthenticationFetched ? (
@@ -37,12 +30,12 @@ function App() {
         ) : (
           <Routes>
             <Route index element={<Home />} />
-            <Route path="register" element={<Register />} />
+            <Route path="register" element={<Registere />} />
             <Route path="login" element={<Login />} />
             <Route path="rates" element={<Rates />} />
             <Route path="support" element={<Support />} />
 
-            <Route path="/" element={<ProtectedRoute/>} >
+            <Route path="/" element={<ProtectedRoute />}>
               <Route path="profile" element={<Profile />} />
               <Route path="subscriptions" element={<Subscriptions />} />
               <Route path="users/:id" element={<UserDetail />} />
@@ -54,6 +47,7 @@ function App() {
           </Routes>
         )}
       </div>
+      <Footer />
     </div>
   );
 }

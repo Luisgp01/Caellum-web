@@ -87,22 +87,6 @@ const Register = () => {
           {isSubmitting ? "Creating user..." : "Submit"}
         </button>
       </form>
-      <div className="col-md-6 col-lg-4 mb-5 ">
-        <div
-          className="portfolio-item mx-auto"
-          data-bs-toggle="modal"
-          data-bs-target="#portfolioModal3"
-        >
-          <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div className="portfolio-item-caption-content text-center text-white"></div>
-          </div>
-          <img
-            className="img-fluid"
-            src="https://res.cloudinary.com/caellum/image/upload/v1653522336/caellum/person-circle-plus-solid_j1ki8v.svg"
-            alt="People"
-          />
-        </div>
-      </div>
     </div>
   );
 }

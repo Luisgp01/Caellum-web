@@ -46,9 +46,6 @@ const Login = () => {
     <div>
       <br />
       <div className="image">
-        <div>
-          <div></div>
-        </div>
       </div>
       <h1 className="mt-3">Login</h1>
 
@@ -75,23 +72,6 @@ const Login = () => {
       <div>
         <br />
         <br />
-      </div>
-      <div className="col-md-6 col-lg-4 mb-5 ">
-        <div
-          className="portfolio-item mx-auto"
-          data-bs-toggle="modal"
-          data-bs-target="#portfolioModal3"
-        >
-          <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div className="portfolio-item-caption-content text-center text-white">
-            </div>
-          </div>
-          <img
-            className="img-fluid"
-            src="https://res.cloudinary.com/caellum/image/upload/v1653522145/caellum/shield-halved-solid_nbzmy7.svg"
-            alt="People"
-          />
-        </div>
       </div>
     </div>
   );

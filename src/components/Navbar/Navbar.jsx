@@ -11,7 +11,7 @@ const Navbar = () => {
       id="mainNav"
     >
       <div className="container">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand textColor" to="/">
           Caellum
         </NavLink>
         <button
@@ -30,22 +30,22 @@ const Navbar = () => {
             {!user ? (
               <>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/login">
+                  <NavLink className="nav-link textColor" to="/login">
                     Login
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/register">
+                  <NavLink className="nav-link textColor" to="/register">
                     Register
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/support">
+                  <NavLink className="nav-link textColor" to="/support">
                     Support
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/rates">
+                  <NavLink className="nav-link textColor" to="/rates">
                     Rates
                   </NavLink>
                 </li>
@@ -53,22 +53,22 @@ const Navbar = () => {
             ) : (
               <>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/profile">
+                  <NavLink className="nav-link textColor" to="/profile">
                     Profile
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/Subscriptions">
+                  <NavLink className="nav-link textColor" to="/Subscriptions">
                     Subscriptions
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/support">
+                  <NavLink className="nav-link textColor" to="/support">
                     Support
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/rates">
+                  <NavLink className="nav-link textColor" to="/rates">
                     Rates
                   </NavLink>
                 </li>
