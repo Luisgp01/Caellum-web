@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./Home.scss";
 import Section1 from "./Section/Section1";
 import ControlledCarousel from "../../components/Carousel/Carousel";
+import Section2 from "./Section/Section2";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -22,12 +23,6 @@ const Home = () => {
       <header className="text-white text-center ">
         <div className="container d-flex align-items-center flex-column building">
           <br />
-          {/*//<img
-           // className="masthead-avatar mb-5 img-fhttpsluid"
-            //src="https://res.cloudinary.com/caellum/image/upload/c_scale,h_166,w_203/v1653435550/caellum/city-solid_cngrpo.svg"
-            //alt="Building"
-          ///>/*/}
-          <hr className="dividerSection" />
           <h1 className="masthead-heading text-uppercase mb-0 text">Caellum</h1>
 
           <div className="divider-custom divider-light">
@@ -49,7 +44,7 @@ const Home = () => {
           <h2 className="page-section text-center text-uppercase text-white">
             About
           </h2>
-
+         <Section2 />
           <div className="divider-custom divider-light">
             <div className="divider-custom-line"></div>
             <div className="divider-custom-icon">
