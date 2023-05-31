@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-lg-4 mb-5 mb-lg-0">
             <h4 className="text-uppercase mb-4">Ubicacion</h4>
             <p className="lead mb-0">
-             Paseo de la Chopera 18
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
               <br />
               Madrid
             </p>
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="col-lg-4">
             <h4 className="text-uppercase mb-4">Caellum</h4>
             <p className="lead mb-0">
-             Manteniendo una vision innovadora en nuestra web 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
           </div>
         </div>

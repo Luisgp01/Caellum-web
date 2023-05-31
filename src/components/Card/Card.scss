@@ -1,0 +1,13 @@
+    .button {
+        background-image: linear-gradient(to bottom, #3a1f2f, #43233e, #492950, #4a3063, #443a79, #3e4a8f, #2f5ba3, #006cb7, #0086c6, #009ab2, #00aa7e, #20b337);
+        transition-duration: 0.6s;
+
+        .button:hover {
+            background-color: linear-gradient(to left bottom, #3a1f2f, #43233e, #492950, #4a3063, #443a79, #3e4a8f, #2f5ba3, #006cb7, #0086c6, #009ab2, #00aa7e, #20b337);
+        }
+    }
+    
+    .title {
+        color: gray;
+    }
+
