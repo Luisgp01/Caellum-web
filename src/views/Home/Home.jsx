@@ -32,7 +32,7 @@ const Home = () => {
           </div>
 
           <p className="masthead-subheading font-weight-light mb-0 words">
-            Luz a tu alcance
+            Proin id nunc sed metus
           </p>
         </div>
       </header>
@@ -44,7 +44,7 @@ const Home = () => {
           <h2 className="page-section text-center text-uppercase text-white">
             About
           </h2>
-         <Section2 />
+          <Section2 />
           <div className="divider-custom divider-light">
             <div className="divider-custom-line"></div>
             <div className="divider-custom-icon">
@@ -56,13 +56,14 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-4 ms-auto">
               <p className="lead">
-                Somos una empresa lider proveedor de servicios energeticos
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                venenatis, turpis eleifend posuere tincidunt
               </p>
             </div>
             <div className="col-lg-4 me-auto">
               <p className="lead">
-                Una empresa innovadora en busqueda de mejorar el servicio de luz
-                a los hogares y oficinas de los clientes
+                Proin id nunc sed metus tempor blandit. Praesent erat ex,
+                dignissim eget euismod a, pulvinar bibendum tellus
               </p>
             </div>
           </div>

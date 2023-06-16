@@ -8,3 +8,15 @@ padding: 10px;
     justify-content: center;
     justify-items: center;
 }
+
+@media screen and (min-width:400px) {
+    .logoImage {
+            background-image: url('../../img/cardHome.jpg');
+            background-size:contain;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+}

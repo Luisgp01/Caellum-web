@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '../Login/Login.scss'
 
 
+
 const initialForm = {
     email: '',
     password: '',
@@ -19,9 +20,10 @@ function Login() {
       setContactInfo({...contactInfo, [event.target.name]: event.target.value})
     }
 
-    return (
+  return (
+    <div className='logoImage'>
       <form onSubmit={handleSubmit}>
-        <br/>
+        <br />
           <input
             className="loginField"
             type="email"
@@ -38,11 +40,12 @@ function Login() {
                     <button type='submit' className='btn btn-primary'>Login</button>
                 </div>
                 <p>
-                <Link to='/home' className='btn btn-secondary'>
+                <Link to='/' className='btn btn-secondary'>
                     Back
                 </Link>
-                </p>
-        </form>
+        </p>
+      </form>
+</div>
     );
 }
 

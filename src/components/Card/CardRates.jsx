@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 
+
 export default function CardRates() {
 
   const [hover, setHover] = useState();
@@ -42,8 +43,8 @@ export default function CardRates() {
     <div>
       <div className="d-flex justify-content-around">
         {cardItems.map((item, index) => (
-          <div key={index} className="card container m-5">
-            <div className='card-body'>
+          <div key={index} className="card container m-5 ratesColor">
+            <div className='card-body shadow-lg'>
               <div className='card-title'>{item.titulo}
                 <div className='card-text'>{item.body}
                   <a href="/"
@@ -54,7 +55,9 @@ export default function CardRates() {
                     onMouseOver={handleMouseIn}
                     onMouseOut={handleMouseOut}
                   >
-                  {item.footer}
+                   
+                    {item.footer}
+                 
                 </a>
                 </div>
               </div>

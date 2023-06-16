@@ -8,7 +8,10 @@ const Rates = () => {
   return (
     <div>
       <div className="div">
-        <h3>Tarifas que se ajustan a las necesidades del cliente.</h3>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          venenatis
+        </h3>
         <br />
         <Collapse />
       </div>
@@ -16,7 +19,7 @@ const Rates = () => {
       <div>
         <CardRates />
       </div>
-      
+
       <form>
         <div className="form-group">
           <label for="exampleInputEmail1" className="content">

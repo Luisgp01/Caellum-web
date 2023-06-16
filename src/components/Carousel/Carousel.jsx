@@ -13,7 +13,7 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} className='shadow-lg'>
       <Carousel.Item>
         <img
           className="d-block w-100 img-fluid"

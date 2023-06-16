@@ -4,7 +4,7 @@ import "../Register/Register.scss";
 
 export default function Register() {
     return (
-      <div>
+      <div className="logImage">
         <form>
           <br />
           <input
@@ -41,7 +41,7 @@ export default function Register() {
             </button>
           </p>
           <p>
-            <Link to="/home" className="btn btn-secondary">
+            <Link to="/" className="btn btn-secondary">
               Back
             </Link>
           </p>

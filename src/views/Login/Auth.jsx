@@ -1,5 +1,7 @@
 import React from 'react';
 import Login from '../../components/Login/Login'
+
+
 const Auth = () => {
     const data = (data) => {
          console.log(data)

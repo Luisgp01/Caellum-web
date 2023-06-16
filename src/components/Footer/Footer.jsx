@@ -3,8 +3,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="color-text text-center">
-      <div>
+    <footer className="color-text text-center shadow-sm p-3 mb-3">
         <div className="row">
           <div className="col-lg-4 mb-5 mb-lg-0">
             <h4 className="text-uppercase mb-4">Ubicacion</h4>
@@ -16,7 +15,7 @@ const Footer = () => {
           </div>
 
           <div className="col-lg-4 mb-5 mb-lg-0">
-            <h4 className="text-uppercase mb-4">Redes Sociales</h4>
+            <h4 className="text-uppercase mb-4">Social Media</h4>
             <a className="btn btn-outline-light btn-social mx-1" href="#!">
               <i className="fab fa-fw fa-facebook-f"></i>
             </a>
@@ -38,7 +37,6 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
     </footer>
   );
 };

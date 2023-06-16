@@ -22,6 +22,7 @@ function App() {
   const { isAuthenticationFetched } = useAuthContext();
   return (
     <div className="App">
+      <br />
       <Navbar />
 
       <div className="container">

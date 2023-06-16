@@ -7,12 +7,12 @@ const Navbar = () => {
   const { user } = useAuthContext();
   return (
     <nav
-      className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top navi"
+      className="navbar navbar-expand-lg  text-uppercase fixed-top navColor"
       id="mainNav"
     >
       <div className="container">
         <NavLink className="navbar-brand textColor" to="/">
-          Caellum
+          <i class="fa-solid fa-building"></i> Caellum
         </NavLink>
         <button
           className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
@@ -31,22 +31,22 @@ const Navbar = () => {
               <>
                 <li className="nav-item">
                   <NavLink className="nav-link textColor" to="/login">
-                    Login
+                    <i className="fa-solid fa-user"></i> Login
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link textColor" to="/register">
-                    Register
+                    <i class="fa-solid fa-file-lines"></i> Register
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link textColor" to="/support">
-                    Support
+                    <i class="fa-solid fa-truck-fast"></i> Support
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link textColor" to="/rates">
-                    Rates
+                    <i class="fa-solid fa-credit-card"></i> Rates
                   </NavLink>
                 </li>
               </>

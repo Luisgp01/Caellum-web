@@ -51,7 +51,7 @@ const [hover, setHover] = useState()
         <div className="d-flex justify-content-around">
           {cardHome.map((item, index) => (
             <div key={index} className="card container m-5">
-              <div className="card-body">
+              <div className="card-body shadow-lg">
                 <div className="card-title title">
                   {item.titulo}
                   <div className="card-text">
@@ -74,7 +74,7 @@ const [hover, setHover] = useState()
           ))}
         </div>
       </div>
-      );
+
     </div>
   );
 }
