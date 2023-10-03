@@ -1,4 +1,6 @@
 import { React, useState } from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileContract} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function CardRates() {
@@ -41,24 +43,25 @@ export default function CardRates() {
 
   return (
     <div>
-      <div className="d-flex justify-content-around">
+      <div className="d-flex container  flex-column w-50 center">
         {cardItems.map((item, index) => (
-          <div key={index} className="card container m-5 ratesColor">
-            <div className='card-body shadow-lg'>
-              <div className='card-title'>{item.titulo}
-                <div className='card-text'>{item.body}
-                  <a href="/"
-                
-                    className='btn btn-primary'
-                  
-                    onClick={(e) => {onClick(e, item)}}
+          <div key={index} className="card m-5 cardColor">
+            <div className="card-body shadow-lg">
+              <div className="card-title">
+                {item.titulo}
+                <div className="card-text">
+                  {item.body}
+                  <a
+                    href="/"
+                    className="btn btn-primary d-inline m-1 w-25 flex-column"
+                    onClick={(e) => {
+                      onClick(e, item);
+                    }}
                     onMouseOver={handleMouseIn}
                     onMouseOut={handleMouseOut}
                   >
-                   
-                    {item.footer}
-                 
-                </a>
+                    {item.footer} <FontAwesomeIcon icon={faFileContract} />
+                  </a>
                 </div>
               </div>
             </div>

@@ -22,13 +22,13 @@ function App() {
   const { isAuthenticationFetched } = useAuthContext();
   return (
     <div className="App">
-      <br />
+    
       <Navbar />
-
       <div className="container">
         {!isAuthenticationFetched ? (
           <p>Loading...</p>
         ) : (
+            
           <Routes>
             <Route index element={<Home />} />
             <Route path="register" element={<Registere />} />

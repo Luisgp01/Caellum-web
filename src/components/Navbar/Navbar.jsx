@@ -41,12 +41,12 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link textColor" to="/support">
-                    <i class="fa-solid fa-truck-fast"></i> Support
+                    <i class="fa-solid fa-phone"></i> Support
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link textColor" to="/rates">
-                    <i class="fa-solid fa-credit-card"></i> Rates
+                    <i class="fa-solid fa-money-bill"></i> Rates
                   </NavLink>
                 </li>
               </>

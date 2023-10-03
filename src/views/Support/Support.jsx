@@ -1,17 +1,11 @@
 import React from "react";
 import "../Support/Support.scss";
 import Accordion from "../../components/Accordion/Accordion";
-import CardSupport from "../../components/Card/CardSupport";
+
 
 const Support = () => {
   return (
     <div>
-      <div>
-        <br />
-        <div>
-          <CardSupport />
-        </div>
-      </div>
       <br />
       <Accordion />
       <br />
@@ -23,11 +17,11 @@ const Support = () => {
           data-bs-target="#offcanvasScrolling"
           aria-controls="offcanvasScrolling"
         >
-          Lorem ipsum dolor sit amet
+          ¿Need help?
         </button>
 
         <div
-          class="offcanvas offcanvas-start bg-primary"
+          class="offcanvas offcanvas-start accordionColor"
           data-bs-scroll="true"
           data-bs-backdrop="false"
           tabindex="-1"
@@ -47,8 +41,8 @@ const Support = () => {
           </div>
           <div class="offcanvas-body">
             <div class="card">
-              <div class="card-header bg-success">felis sit amet</div>
-              <div class="card-body bg-secondary shadow-lg">
+              <div class="card-header accordionColor">felis sit amet</div>
+              <div class="card-body accordionColor shadow-lg">
                 <h5 class="card-title">
                   Duis ornare eget velit iaculis egestas
                 </h5>
@@ -56,8 +50,8 @@ const Support = () => {
                   Mauris arcu justo, rhoncus in mattis eu, pharetra pulvinar
                   nulla.
                 </p>
-                <a href="/" class="btn btn-success">
-                  Go somewhere
+                <a href="/" class="btn btn-info">
+                  Click here
                 </a>
               </div>
             </div>

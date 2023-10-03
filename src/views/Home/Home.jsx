@@ -45,13 +45,7 @@ const Home = () => {
             About
           </h2>
           <Section2 />
-          <div className="divider-custom divider-light">
-            <div className="divider-custom-line"></div>
-            <div className="divider-custom-icon">
-              <i className="fas fa-star fa-spin"></i>
-            </div>
-            <div className="divider-custom-line"></div>
-          </div>
+        
 
           <div className="row">
             <div className="col-lg-4 ms-auto">

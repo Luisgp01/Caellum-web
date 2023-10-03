@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Accordion/Accordion.scss'
 
 export default function Accordion() {
   return (
@@ -22,7 +23,7 @@ export default function Accordion() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body bg-primary">
+            <div class="accordion-body accordionColor">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               porta ante metus, in bibendum tellus tristique in. Aliquam eu
               tempus quam, ac hendrerit felis. Vivamus in nibh sollicitudin,
@@ -50,7 +51,7 @@ export default function Accordion() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body bg-primary">
+            <div class="accordion-body accordionColor">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               porta ante metus, in bibendum tellus tristique in. Aliquam eu
               tempus quam, ac hendrerit felis. Vivamus in nibh sollicitudin,
@@ -78,7 +79,7 @@ export default function Accordion() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body bg-primary">
+            <div class="accordion-body accordionColor">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               porta ante metus, in bibendum tellus tristique in. Aliquam eu
               tempus quam, ac hendrerit felis. Vivamus in nibh sollicitudin,
@@ -106,7 +107,7 @@ export default function Accordion() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body bg-primary">
+            <div class="accordion-body accordionColor">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               porta ante metus, in bibendum tellus tristique in. Aliquam eu
               tempus quam, ac hendrerit felis. Vivamus in nibh sollicitudin,

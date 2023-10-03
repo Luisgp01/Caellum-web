@@ -1,52 +1,67 @@
-import { React, useState } from 'react';
-import { Link } from 'react-router-dom'
-import '../Login/Login.scss'
-
-
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
+import "../Login/Login.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 
 const initialForm = {
-    email: '',
-    password: '',
-}
+  email: "",
+  password: "",
+};
 
 function Login() {
-    const [contactInfo, setContactInfo] = useState(initialForm)
+  const [contactInfo, setContactInfo] = useState(initialForm);
 
-    const handleSubmit = (event) => {
-         event.preventDefault()
-    }
-    
-    const handleChange = (event) => {
-      setContactInfo({...contactInfo, [event.target.name]: event.target.value})
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  const handleChange = (event) => {
+    setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
+  };
 
   return (
-    <div className='logoImage'>
-      <form onSubmit={handleSubmit}>
-        <br />
-          <input
-            className="loginField"
-            type="email"
-            placeholder="Email"
-            onChange={(e) => handleChange(e)}
-          />
-          <input
-            className="loginField"
-            type="password"
-            placeholder="Password"
-            onChange={(e) => handleChange(e)}
-                />
-                <div>
-                    <button type='submit' className='btn btn-primary'>Login</button>
-                </div>
-                <p>
-                <Link to='/' className='btn btn-secondary'>
-                    Back
-                </Link>
-        </p>
-      </form>
-</div>
-    );
+    <form className="" onSubmit={handleSubmit}>
+      <br />
+      <div className="input-group">
+        <span className="input-group-text" id="basic-addon1">
+          <FontAwesomeIcon className="iconColor" icon={faUser} />
+        </span>
+        <input
+          type="text"
+          className="w-auto container d-flex flex-sm-row border border-3"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          onChange={(e) => handleChange(e)}
+        />
+      </div>
+      <br />
+      <div className="input-group">
+        <span className="input-group-text" id="basic-addon1">
+          <FontAwesomeIcon className="iconColor" icon={faLock} />
+        </span>
+        <input
+          type="text"
+          className="w-auto container d-flex flex-sm-row border border-3"
+          placeholder="Password"
+          aria-label="Password"
+          aria-describedby="basic-addon1"
+          onChange={(e) => handleChange(e)}
+        />
+      </div>
+      <br />
+      <Link to="/" className="btn btn-primary container w-auto d-flex">
+        <p className="container">Login</p>
+      </Link>
+      <br />
+      <p>
+        <Link to="/" className="btn btn-secondary container w-auto d-flex">
+          <p className="container">Back</p>
+        </Link>
+      </p>
+    </form>
+  );
 }
 
-export default Login
+export default Login;

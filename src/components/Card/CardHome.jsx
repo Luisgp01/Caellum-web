@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Image from '../../img/cardHome.jpg'
+import Image from '../../img/register.jpg'
 import '../Card/Card.scss'
 
 export default function CardHome() {
@@ -33,8 +33,8 @@ const [hover, setHover] = useState()
     },
   ];
 
-    const onClick = (e, item) => {
-      e.preventDefault();
+    const onClick = (item) => {
+      item.preventDefault();
     };
 
     const handleMouseIn = () => {
@@ -50,7 +50,8 @@ const [hover, setHover] = useState()
       <div>
         <div className="d-flex justify-content-around">
           {cardHome.map((item, index) => (
-            <div key={index} className="card container m-5">
+            <div key={index} className="card container m-5 ">
+              <img src={Image} className='m-3' alt="card" />
               <div className="card-body shadow-lg">
                 <div className="card-title title">
                   {item.titulo}
@@ -59,8 +60,8 @@ const [hover, setHover] = useState()
                     <a
                       href="/"
                       className="btn btn-primary"
-                      onClick={(e) => {
-                        onClick(e, item);
+                      onClick={() => {
+                        onClick(item);
                       }}
                       onMouseOver={handleMouseIn}
                       onMouseOut={handleMouseOut}
@@ -74,7 +75,6 @@ const [hover, setHover] = useState()
           ))}
         </div>
       </div>
-
     </div>
   );
 }
